@@ -86,9 +86,6 @@ a {
     align-items: center;
 }
 
-.logo {
-    margin-right: 93px;
-}
 
 .logo {
     font-family: 'Raleway';
@@ -99,6 +96,8 @@ a {
     text-decoration: none;
     letter-spacing: 0.03em;
     color: var(--active);
+
+    margin-right: 93px;
 }
 
 .logo--black {
@@ -597,13 +596,13 @@ a {
     background-color: var(--font-color);
 }
 
-.team-list {
+.team__list {
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-.team-item {
+.team__item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
 
@@ -613,16 +612,16 @@ a {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-wrap {
+.team__wrap {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.team-item:last-child {
+.team__item:last-child {
     margin-right: 0;
 }
 
-.team-title {
+.team__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -631,7 +630,7 @@ a {
     margin-bottom: 10px;
 }
 
-.team-text {
+.team__text {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -640,7 +639,7 @@ a {
     margin-bottom: 16px;
 }
 
-.team-socials {
+.social {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -648,15 +647,15 @@ a {
     padding: 0;
 }
 
-.social-item {
+.social__item {
     margin-right: 10px;
 }
 
-.social-item:last-child {
+.social__item:last-child {
     margin-right: 0;
 }
 
-.social-list {
+.social__list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -668,25 +667,25 @@ a {
     transition: background-color 250ms var(--time-function);
 }
 
-.social-list:hover,
-.social-list:focus {
+.social__list:hover,
+.social__list:focus {
     background-color: var(--active);
 }
-.social-list:hover .icon-social,
-.social-list:focus .icon-social {
+.social__list:hover .social__icon,
+.social__list:focus .social__icon {
     fill: var(--white);
 }
 
-.icon-social {
+.social__icon {
     width: 20px;
     height: 20px;
     fill: var(--icons-svg);
 }
 
-/* customers */
+        /* CUSTOMERS */
 
 
-.customers-list {
+.customers__list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -695,11 +694,11 @@ a {
     
 }
 
-.customers-item {
+.customers__item {
     margin-right: 30px;
 }
 
-.customers-link {
+.customers__link {
     display: flex;
     align-items:center;
     justify-content: center;
@@ -713,22 +712,22 @@ a {
     transition: color 250ms var(--time-function), border-color 250ms var(--time-function);
     fill: var(--icons-svg);
 }
-.customers-item:last-child {
+.customers__item:last-child {
     margin-right: 0;
 }
 
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
+.customers__link:hover .customers__icon,
+.customers__link:focus .customers__icon {
     fill: var(--active);
 }
 
-.customers-link:hover,
-.customers-link:focus {
+.customers__link:hover,
+.customers__link:focus {
     border-color: var(--active);
 }
 
 
-/* footer */
+        /* FOOTER */
 
 
 .footer {
@@ -736,42 +735,53 @@ a {
     background-color: var(--brand-color);
 }
 
-.footer-wrapper {
+.footer__wrapper {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
-.footer-about {
+.footer__about {
     margin-right: 70px;
 }
 
 
-.footer-logotip {
+.logo--footer {
     display: block;
     margin-bottom: 20px;
+    margin-right: 0;
 }
 
-.footer-logo {
+.logo--white {
     color: var(--white);
+    margin-right: 0;
     
 }
 
-.footer-item:nth-child(-n+2) {
+.footer__item:nth-child(-n+2) {
     margin-bottom: 9px;
 }
 
-.footer-list {
+.footer__list {
     padding: 0;
     margin:0;
 }
 
-.footer-text {
+.footer__text {
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white);
 
 }
+
+.footer__link {
+    font-style: normal;
+    line-height: 1.71;
+    padding-top: 9px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+
 
 .footer-social {
     margin-right: 93px;
@@ -787,13 +797,6 @@ a {
     margin-bottom: 20px;
 }
 
-.footer-link {
-    font-style: normal;
-    line-height: 1.71;
-    padding-top: 9px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    }
 
 .social-footer-link {
     background-color: rgba(255, 255, 255, 0.1);
