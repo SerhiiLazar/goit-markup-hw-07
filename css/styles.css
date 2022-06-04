@@ -655,7 +655,7 @@ a {
     margin-right: 0;
 }
 
-.social__list {
+.social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -667,12 +667,12 @@ a {
     transition: background-color 250ms var(--time-function);
 }
 
-.social__list:hover,
-.social__list:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: var(--active);
 }
-.social__list:hover .social__icon,
-.social__list:focus .social__icon {
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
     fill: var(--white);
 }
 
@@ -782,12 +782,12 @@ a {
     color: rgba(255, 255, 255, 0.6);
     }
 
-
-.footer-social {
+/* FOOTER SOCIAL */
+.footer__social {
     margin-right: 93px;
 }
 
-.title-social {
+.footer__title {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
@@ -798,31 +798,30 @@ a {
 }
 
 
-.social-footer-link {
+.social__link--bgc {
     background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social-icon {
+
+.social__icon--white {
     fill: var(--white);
 }
 
         /* FOOTER-FORM */
-.right-side-footer {
+.footer__rightside {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
-.rigth-side-form {
+.footer__form {
     display: flex;
 }
 
-.footer-form-input>[placeholder] {
+.footer__input>[placeholder] {
     color:rgba( 33, 150, 243, 0.9);
     
 }
 
-.footer-form-input {
+.footer__input {
     display: inline-block;
     background-color: inherit;
     width: 358px;
@@ -860,7 +859,7 @@ a {
                     /* PORTFOLIO */
 
     /* main-header */
-.portfolio-control {
+.control {
     display: flex;
     justify-content: center;
     padding: 0;
@@ -868,15 +867,15 @@ a {
     margin-bottom: 50px;
 }
 
-.control-item {
+.control__item {
     margin-right: 8px;
 }
 
-.portfolio-control:last-child {
+.control:last-child {
     margin-right: 0;
 }
 
-.control-btn {
+.control__btn {
     display: block;
     padding: 6px 22px;
     border-radius: 4px;
@@ -895,7 +894,7 @@ a {
     transition: color 250ms var(--time-function), background-color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 
-.control-btn.active {
+.control__btn--ctive {
     background-color: var(--hover-btn);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
@@ -909,8 +908,8 @@ a {
     color: var(--white);
 }
 
-.control-btn:hover,
-.control-btn:focus {
+.control__btn:hover,
+.control__btn:focus {
     background-color: var(--hover-btn);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -929,15 +928,14 @@ a {
 
 /* content */
 
-.portfolio-content {
+.content {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
 
-.content-item {
-    display: block;
+.content__item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
@@ -945,47 +943,47 @@ a {
     border: 1px solid #EEEEEE;
 }
 
-.content-item:nth-child(3n) {
+.content__item:nth-child(3n) {
     margin-right: 0;
 }
 
-.content-item:nth-child(n + 7) {
+.content__item:nth-child(n + 7) {
     margin-bottom: 0;
 }
 
-.content-img {
+.content__img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.content-link {
+.content__link {
     display: block;
     margin: 0;
     padding: 0;
 }
 
-.content-link:hover,
-.content-link:focus {
+.content__link:hover,
+.content__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.content-link:hover .content-overlay,
-.content-link:focus .content-overlay {
+.content__link:hover .content__overlay,
+.conten__-link:focus .content__overlay {
     transform: translateY(0);
     opacity: 1;
 }
 
-.content-wrap {
+.content__wrap {
     padding: 20px 24px;
 }
 
-.content-tumb {
+.content__tumb {
     position: relative;
     overflow: hidden;
 }
 
-.content-overlay {
+.content__overlay {
     position: absolute;
     display: block;
     top: 0;
@@ -1000,7 +998,7 @@ a {
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-overlay {
+.content__paragraph {
     display: block;
     padding: 63px 24px;
 
@@ -1011,7 +1009,7 @@ a {
     letter-spacing: 0.03em;
 }
 
-.content-title {
+.content__title {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 18px;
@@ -1021,7 +1019,7 @@ a {
 
 }
 
-.content-text {
+.content__text {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 16px;
