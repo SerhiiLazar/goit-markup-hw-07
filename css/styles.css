@@ -49,7 +49,7 @@ a {
     color: var(--favorit);
 }
 
-/* container */
+        /* container */
 
 .container {
     width: 1200px;
@@ -60,14 +60,15 @@ a {
     /* border: 2px solid tomato; */
 }
 
-/* section-top */
+        /* section-top */
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-/* header */
+        /* HEADER */
+
 
 .header {
     border-bottom: 1px solid var(--header-border);
@@ -75,17 +76,17 @@ a {
     padding-bottom: 24px;
 }
 
-.main-nav {
+.main {
     display: flex;
     align-items: center;
 }
 
-.header-nav {
+.main__nav {
     display: flex;
     align-items: center;
 }
 
-.header-nav .logo {
+.logo {
     margin-right: 93px;
 }
 
@@ -100,22 +101,16 @@ a {
     color: var(--active);
 }
 
-.header-logo {
+.logo--black {
     color: var(--black);
 }
 
-.header-list {
-    display: flex;
-    align-items: center;
-}
-
-.header-list .header-item + .header-item,
-.header-contact .contact-item + .contact-item {
+.main__list .main__item + .main__item {
     margin-left: 50px;
 }
 
-.header-list,
-.header-contact {
+.main__list {
+    display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -125,24 +120,19 @@ a {
     letter-spacing: 0.02em;
 }
 
-.header-contact {
-    align-items: baseline;
-}
-
-
-
-.header-link.active {
-    color: var(--active);
-}
-
-.header-link {
+.main__link {
+   
     position: relative;
     padding-top: 32px;
     padding-bottom: 32.2px;
     transition: color 250ms var(--time-function);
 }
 
-.header-link::after {
+.main__link--active {
+    color: var(--active);
+}
+
+.main__link--active::after {
     position:absolute;
     content: "";
     bottom: 0;
@@ -157,22 +147,22 @@ a {
     transition: transform 250ms var(--time-function);
 }
 
-.header-link.active::after {
+.main__link--active::after {
     transform: scaleX(1);
 }
 
-
-.header-contact {
-    display: flex;
+.main__list--contact {
     margin-left: auto;
+    position: relative;
+    
 }
 
-/* .header-link:hover::after,
-.header-link:focus::after, */
-.header-link:hover,
-.header-link:focus,
-.contact-link:hover,
-.contact-link:focus {
+/* .main__link:hover::after,
+.main__link:focus::after, */
+.main__link:hover,
+.main__link:focus,
+.main__link--grey:hover,
+.main__link--grey:focus {
     /* transform:scaleX(1); */
     transition: transform 250ms var(--time-function);
 
@@ -182,14 +172,22 @@ a {
     
 }
 
-.contact-link {
+.main__link--grey {
+    display: flex;
+    align-items: center;
+    padding: 0;
     color: var(--text);
     fill: var(--text);
+    transition: color 250ms var(--time-function);
 }
 
-.contact-icon {
+.main__icon {
     margin-right: 10px;
 }
+
+
+        /* SERVICE */
+
 
 .service-top {
     max-width: 1600px;
