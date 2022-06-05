@@ -1,0 +1,2 @@
+*,*::after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box}h1,h2,h3,h4,h5,p{padding:0;margin:0}img{display:block}body{font-family:'Roboto', sans-serif;font-size:14px;color:var(--favorit);padding:0}ul{list-style:none}a{text-decoration:none;color:var(--favorit)}.container{width:1200px;padding-left:15px;padding-right:15px;margin-left:auto;margin-right:auto}
+/*# sourceMappingURL=index.min.css.map */
