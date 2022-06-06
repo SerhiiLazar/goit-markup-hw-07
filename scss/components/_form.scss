@@ -86,6 +86,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+
+    &__link {
+        color: var(--active);
+        text-decoration: underline;
+    }
 }
 
 .checkbox__desc {
@@ -98,10 +103,7 @@
     color: var(--text);
 }
 
-.checkbox__desc>.checkbox__link {
-    color: var(--active);
-    text-decoration: underline;
-}
+
 
 .checkbox__custom {
     width: 16px;

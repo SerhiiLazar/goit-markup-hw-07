@@ -3,13 +3,21 @@
 
 .header {
     border-bottom: 1px solid var(--header-border);
-    padding-top: 24px;
-    padding-bottom: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 
 .main {
     display: flex;
     align-items: center;
+   
+}
+
+.main__item  {
+    margin-left: 50px;
+    &:nth-child(4n + 1) {
+        margin-left: 0;
+    }
 }
 
 .main__nav {
@@ -17,9 +25,6 @@
     align-items: center;
 }
 
-.main__list .main__item + .main__item {
-    margin-left: 50px;
-}
 
 .main__list {
     display: flex;
@@ -35,6 +40,7 @@
         margin-left: auto;
         position: relative;
     }
+    
 }
 
 .main__link {
