@@ -10,6 +10,7 @@
 .main {
     display: flex;
     align-items: center;
+
    
 }
 
@@ -39,6 +40,12 @@
     &--contact {
         margin-left: auto;
         position: relative;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 480px;
+        display: none;
+        
     }
     
 }

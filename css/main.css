@@ -60,12 +60,30 @@ a {
 
 /* container */
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   /* border: 2px solid tomato; */
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -140,6 +158,13 @@ body {
 .main__list--contact {
   margin-left: auto;
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .main__list {
+    width: 480px;
+    display: none;
+  }
 }
 
 .main__link {
@@ -345,6 +370,12 @@ body {
 /* PROCESS */
 .process {
   padding-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .process {
+    display: none;
+  }
 }
 
 .process__list {
